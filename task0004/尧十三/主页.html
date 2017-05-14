@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>尧十三</title>
+    <style>
+        html{
+            width:100%;
+            height: 100%;
+            background-image: url("background.jpg");
+            background-size:auto;
+
+            text-align: center;
+            color: #2e6056;
+
+        }
+        .box{
+
+            margin-top: 3em;
+            margin-left: 3em;
+            border: 3px  #93ccbc;
+            overflow:hidden;
+            padding: 2em;
+            margin-right: 21em;
+        }
+        .photo{
+
+            float:right;
+
+            margin-right: 2em;
+            padding: 1em;
+
+        }
+        .lianjie{
+            width: 200px;
+            float:right;
+            border: 6px dashed #93ccbc;
+            margin-right: 3em;
+            padding: 1em;
+        }
+
+        table{
+            margin: auto;
+        }
+        h1{
+            font-size:5em;
+            color: rgba(46, 96, 86, 0.3); ;
+
+        }
+        nav {
+            margin: 10px ;
+            text-align: center;
+        }
+
+        nav ul ul {
+            display: none;
+        }
+
+        nav ul li:hover > ul {
+            display: block;
+        }
+
+
+        nav ul {
+            background: -webkit-linear-gradient(top, rgba(11, 239, 172, 0.11) 0%, rgba(33, 247, 80, 0.4) 100%);
+            box-shadow: 0px 0px 9px rgba(163, 255, 78, 0.26);
+            padding: 0 40px;
+
+            list-style: none;
+            position: relative;
+            display: inline-table;
+        }
+        nav ul:after {
+            content: ""; display: block;
+        }
+
+        nav ul li {
+            float: left;
+        }
+        nav ul li:hover {
+            background: -webkit-linear-gradient(top, #28643b 0%, rgba(1, 81, 100, 0.51) 40%);
+        }
+        nav ul li:hover a {
+            color: #faffcb;
+        }
+
+        nav ul li a {
+            display: block; padding: 10px 20px;
+            color: #006a0e; text-decoration: none;
+        }
+
+
+        nav ul ul {
+            background: rgba(0, 106, 14, 0.62); border-radius: 5px; padding: 0;
+            position: absolute; top: 100%;
+        }
+        nav ul ul li {
+            float: none;
+            border-top: 1px solid rgba(22, 106, 78, 0.65);
+            border-bottom: 1px solid rgba(22, 106, 78, 0.65); position: relative;
+        }
+        nav ul ul li a {
+            padding: 2px 2px;
+            color: #fff;
+        }
+        nav ul ul li a:hover {
+            background:#006a0e;
+        }
+
+        nav ul ul ul {
+            position: absolute; left: 100%; top:0;
+        }
+        #daohang3  {
+            position: fixed;
+            right: 20px;
+            bottom:20px;
+            float: right;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            background: lightgray;
+
+        }
+        #daohang3 a {
+            padding-left: 1em;
+            padding-right: 1em;
+            padding-top: 0.1em;
+            padding-bottom: 0.1em;
+            text-align: center;
+            background: #fff9fe;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.8);
+
+            transition: all .5s ease;
+
+        }
+        #daohang3 a:hover {
+            background: #88b0e0;
+
+        }
+    </style>
+</head>
+<body>
+<h1>他的名字 尧十三</h1>
+<nav  id="top">
+    <ul>
+        <li><a href="#">主页</a></li>
+        <li><a href="#">博客</a>
+            <ul>
+                <li><a href="http://weibo.com/u/1822800565?c=spr_qdhz_bd_baidusmt_weibo_s&nick=尧十三" target="_blank">新浪微博</a></li>
+                <li><a href="http://music.163.com/#/user/home?id=35063071" target="_blank">网易云主页</a></li>
+                <li><a href="https://site.douban.com/monamour/"target="_blank">豆瓣主页</a></li>
+            </ul>
+        </li>
+        <li><a href="#">文章或评价</a>
+            <ul>
+                <li><a href="https://tieba.baidu.com/p/1212262355"target="_blank">把木耳染黑</a></li>
+                <li><a href="文章.html">小评或文章</a>
+
+                </li>
+            </ul>
+        </li>
+        <li><a href="音乐播放器.html">歌曲专页</a></li>
+        <li><a href="视屏播放.html">视屏专页</a></li>
+        <li><a href="相册.html">他的照片</a></li>
+    </ul>
+</nav>
+<section>
+<div class="basic">
+
+    <div class="photo">
+        <p>照片</p>
+        <img src="photo.jpg" width="200px" height="260px">
+    </div>
+
+    <div class="box jibenziliao">
+  <h4>基本资料</h4>
+    <table border="0" style="text-align: center" >
+        <thead>
+        <tr>
+
+        </tr>
+        <tbody>
+        <tr>
+            <th >中文姓名</th>
+            <td >唐尧</td>
+            <th >别名</th>
+            <td >尧十三，十三哥</td>
+        </tr>
+
+        <tr>
+            <th >性别</th>
+            <td >男</td>
+            <th >婚姻状况</th>
+            <td >未婚</td>
+        </tr>
+
+        <tr>
+            <th >出生日期</th>
+            <td >1986.8.25</td>
+            <th >出生地</th>
+            <td >贵州省毕节市织金县</td>
+        </tr>
+
+        <tr>
+            <th >毕业/就读大学</th>
+            <td >武汉大学</td>
+            <th >专业</th>
+            <td >医学院临床专业</td>
+        </tr>
+        <tr>
+            <th >国籍</th>
+            <td >华中国</td>
+            <th >民族</th>
+            <td >汉族</td>
+        </tr>
+        <tr>
+            <th >星座</th>
+            <td >处女座</td>
+
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+    <nav id="daohang3">
+        <a href="音乐播放器.html">歌曲</a>
+        <a href="相册.html">照片</a>
+        <a href="视屏播放.html">视屏</a>
+        <a href="文章.html">文章</a>
+        <a href="#top">顶部</a>
+
+    </nav>
+<div class="box apply">
+    <h4>职业</h4>
+    <p>民谣歌手，独立音乐人，老流氓，麻油叶一员</p>
+</div>
+    <div>
+        <div class="lianjie">
+            <p>个人网页</p>
+          <p> <a href="http://baike.baidu.com/link?url=shCHIR3mA5cTBV1yYMO-nY1rAuUU5Ff5czHbmdL8ownvDcjm-W7Lp2FHwnqsI2YOI_GVoUi3xpWuzE-HCSdvoh6FskQJIBM7QnLP86bKnUeC893bUJ_QAMvdQGo-0jYV" target="_blank">百度百科</a></p>
+           <p> <a href="http://music.163.com/#/user/home?id=35063071" target="_blank">网易云音乐</a></p>
+            <p> <a href="https://site.douban.com/monamour/" target="_blank">豆瓣音乐</a></p>
+            <p> <a href="http://weibo.com/u/1822800565?c=spr_qdhz_bd_baidusmt_weibo_s&nick=尧十三" target="_blank">新浪微博</a></p>
+
+        </div>
+        <div class="box education">
+            <h4>创作经历</h4>
+            <table border="0">
+                <thead>
+                <tr>
+
+                </tr>
+                <tbody>
+                <tr>
+                    <td >2010年</td>
+                    <td >《宝贝说再见》、《咬之歌》</td>
+
+                </tr>
+
+                <tr>
+                    <td >2011年</td>
+                    <td >《北方的女王》、《在四月快结束的时候我们做了一场没有春天的梦》、《不陌生的人》，《瞎子》</td>
+
+                </tr>
+
+                <tr>
+                    <td >2012</td>
+                    <td >《他爸的》《鸽子吧》《南方的女王》</td>
+
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+<div class="box ability">
+
+    <h4>人物评价</h4>
+    <p>尧十三是一个把雨霖铃改编成了贵州方言的潇洒“盲客”，他用不拘一格的音乐，自成一派、契合大众审美的同时，又撩拨着大众的万千思维。尧十三是一个带着浓厚人文气质的年轻音乐人，他低调的做派让喜欢他的人只能从他的音乐中去了解他。他以天才般孤独而敏感的触觉让作品游离在诗意与痞性之间（网易、腾讯评）</p>
+</div>
+<div class="box experience">
+
+    <h4>早年经历</h4>
+    <p>1993年，尧十三开始学习二胡演奏。2002年，尧十三在贵州省织金县第二中学初中部学习期间，受表哥影响开始学习吉他演奏。
+        2003年，进入贵州省织金县第二中学高中部学习。2006年，考入武汉大学医学院临床专业</p>
+</div>
+<div class="box introduce">
+
+    <h4>尧十三的介绍</h4>
+    <p>尧十三，原名唐尧，1986年8月25日出生于贵州省毕节市织金县，中国内地男歌手，毕业于武汉大学医学院临床专业。
+        2011年，加入麻油叶民间民谣组织；同年，推出个人原创单曲《瞎子》。2012年，为电影《浮城谜事》弹奏吉他曲《我想弹琴给你听》。2013年，正式签约摩登天空。 2014年，为电影《推拿》献唱片尾曲《他妈的。2015年，推出个人原创单曲《北方女王》；同年，推出首张个人音乐专辑《飞船，宇航员》。</p>
+</div>
+</section>
+
+</body>
+</html>

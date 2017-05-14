@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>尧十三</title>
+    <style>
+        html{
+            width:100%;
+            height: 100%;
+            background-image: url("background.jpg");
+            background-size:auto;
+
+            text-align: center;
+            color: #2e6056;
+
+        }
+
+        h1{
+            font-size:5em;
+            color: rgba(46, 96, 86, 0.3); ;
+
+        }
+        nav {
+            margin: 10px ;
+            text-align: center;
+        }
+
+        nav ul ul {
+            display: none;
+        }
+
+        nav ul li:hover > ul {
+            display: block;
+        }
+
+
+        nav ul {
+            background: -webkit-linear-gradient(top, rgba(11, 239, 172, 0.11) 0%, rgba(33, 247, 80, 0.4) 100%);
+            box-shadow: 0px 0px 9px rgba(163, 255, 78, 0.26);
+            padding: 0 40px;
+
+            list-style: none;
+            position: relative;
+            display: inline-table;
+        }
+        nav ul:after {
+            content: ""; display: block;
+        }
+
+        nav ul li {
+            float: left;
+        }
+        nav ul li:hover {
+            background: -webkit-linear-gradient(top, #28643b 0%, rgba(1, 81, 100, 0.51) 40%);
+        }
+        nav ul li:hover a {
+            color: #faffcb;
+        }
+
+        nav ul li a {
+            display: block; padding: 10px 20px;
+            color: #006a0e; text-decoration: none;
+        }
+
+
+        nav ul ul {
+            background: rgba(0, 106, 14, 0.62); border-radius: 5px; padding: 0;
+            position: absolute; top: 100%;
+        }
+        nav ul ul li {
+            float: none;
+            border-top: 1px solid rgba(22, 106, 78, 0.65);
+            border-bottom: 1px solid rgba(22, 106, 78, 0.65); position: relative;
+        }
+        nav ul ul li a {
+            padding: 2px 2px;
+            color: #fff;
+        }
+        nav ul ul li a:hover {
+            background:#006a0e;
+        }
+
+        nav ul ul ul {
+            position: absolute; left: 100%; top:0;
+        }
+        #daohang3  {
+            position: fixed;
+            right: 20px;
+            bottom:20px;
+            float: right;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            background: lightgray;
+
+        }
+        #daohang3 a {
+            padding-left: 1em;
+            padding-right: 1em;
+            padding-top: 0.1em;
+            padding-bottom: 0.1em;
+            text-align: center;
+            background: #fff9fe;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.8);
+
+            transition: all .5s ease;
+
+        }
+        #daohang3 a:hover {
+            background: #88b0e0;
+
+        }
+        #daohang-文章  {
+
+            display:flex;
+
+
+
+            font-size: 14px;
+            line-height: 4;
+            clear: none;
+        }
+        #daohang-文章 a {
+            padding-left: 1em;
+            padding-right: 1em;
+
+
+
+            margin: 0.3em;
+            text-align: center;
+            background: rgba(138, 255, 134, 0.44);
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.8);
+
+            transition: all .5s ease;
+
+        }
+        #daohang-文章 a:hover {
+            color: #8df2ff;
+
+        }
+        article {
+            display: none;
+        }
+        article:target {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<nav id="daohang3">
+    <a href="音乐播放器.html">歌曲</a>
+    <a href="相册.html">照片</a>
+    <a href="视屏播放.html">视屏</a>
+    <a href="文章.html">文章</a>
+    <a href="#top">顶部</a>
+
+</nav>
+<nav  id="top">
+    <ul>
+        <li><a href="#">主页</a></li>
+        <li><a href="#">博客</a>
+            <ul>
+                <li><a href="http://weibo.com/u/1822800565?c=spr_qdhz_bd_baidusmt_weibo_s&nick=尧十三" target="_blank">新浪微博</a></li>
+                <li><a href="http://music.163.com/#/user/home?id=35063071" target="_blank">网易云主页</a></li>
+                <li><a href="https://site.douban.com/monamour/"target="_blank">豆瓣主页</a></li>
+            </ul>
+        </li>
+        <li><a href="#">文章或评价</a>
+            <ul>
+                <li><a href="https://tieba.baidu.com/p/1212262355"target="_blank">把木耳染黑</a></li>
+                <li><a href="文章.html">小评或文章</a>
+
+                </li>
+            </ul>
+        </li>
+        <li><a href="音乐播放器.html">歌曲专页</a></li>
+        <li><a href="视屏播放.html">视屏专页</a></li>
+        <li><a href="相册.html">他的照片</a></li>
+    </ul>
+</nav>
+<nav id="daohang-文章">
+    <a href="#p1">1</a>
+    <a href="#p2">2</a>
+    <a href="#p3">3</a>
+    <a href="#p4">4</a>
+    <a href="#p5">5</a>
+</nav>
+<article id="p1">
+    <h4>
+        小众旧情，大众新欢</h4>
+    <p>小众旧情，大众新欢尧十三的“北纬30度以北”巡演，从今年3月19日开始，始于浙江，一路北上。这期间，尧十三几乎每天都会在微博上和歌迷点赞互动，转发并致谢歌迷为他在演出现场拍摄的照片。作为一名独立民谣歌手，他的微博粉丝有22万。在巡演的城市，有路过的歌迷认出他，兴奋地在他入住的宾馆门外徘徊。</p>
+
+
+    <p>去年10月，尧十三发行自己的第一张专辑《飞船，宇航员》，用他自己的话说，因“懒惰幼稚，沉溺想象”，幸得“各路大神相助，拖延半年，录完首砖”。好些年前，周云蓬就向民谣圈子热烈推荐过尧十三。他在2012年出版在随笔集《绿皮火车》中写道：“贵州的民谣新星尧十三，把柳永的《雨霖铃》翻译成了贵州织金土话（《瞎子》），简直是不亚于原文的经典翻译，让你恍惚间感觉柳永就是一个吃酸汤鱼的贵州老表。”导演娄烨对尧十三的回忆是，在一个午后第一次听尧十三的《宝贝，说再见》，“人总是会被那些简单和平凡打动，就像生活，所以喜欢尧十三。”
+
+    </p>
+
+
+    <p>很多人知道尧十三是因为娄烨2014年的电影《推拿》。影片结尾，盲人小马重新获得一些视力，倚着墙往家走，看到深爱的姑娘正在洗头，露出微笑，尧十三唱的《他妈的》响了起来。毕飞宇的原著，每个人物都独立成章，而娄烨的电影选了小马作为叙事的隐线和部分主观镜头。某些方面，小马与尧十三很像，温和清秀，头脑中却藏着狂想。
+
+    </p>
+
+
+    <p>妈妈我爱上一个姑娘
+
+    </p>
+
+
+    <p>可是她在别人的床上呻吟
+
+    </p>
+
+
+    <p>我想知道她是不是真的快乐
+
+    </p>
+
+
+    <p>我去问她
+
+    </p>
+
+
+    <p>她没有回答
+
+    </p>
+    <p>《他妈的》是尧十三在大学写的。那段时间尧十三状态极度糟糕，和周遭世界的关系也日益紧张。“所有人都去上课了，我还在睡觉，他们去吃饭了，我起床弹吉他，等他们下午去上课，我才开始考虑午饭到底吃什么。”自由又非常压抑。毕业时他写了一首《他爸的》，“爸爸对不起，我没有考上研究生，因为我已经变成一个孤独狼狈的废柴。”</p>
+    <p>尧十三在大学时，常和一些乐队一起玩。武大搞音乐的，几乎都知道十三哥。一位师妹回忆，有次十三在学校附近的173艺术空间酒吧演出，喊她帮忙提前彩排，“彩排到一半儿他给我们每个人散烟，那根黄鹤楼，现在还在我抽屉里。”</p>
+    <p>那一晚大概来了30个听众，演出结束后，一位听众在日志上写道，“十三哥有点醉了。他给一个深爱过的女孩子打电话，他说等下我给你们做手势，你们就一起帮我喊，你好漂亮啊。然后十三哥在现场用电话给那姑娘直播《不会说话的爱情》，唱到最后，十三哥情不能已，向后仰着头，闭着眼，直至一曲结束。”</p>
+    <p>大学最后一年，尧十三有时候晚上去173艺术空间酒吧，等喝完酒，外面已经天亮。后来各地的演出中，为了缓解内心的紧张感，十三也会喝上几杯，常在唱完歌时酣醉。去年年末，身体实在扛不住，医生命令他必须戒酒。他忍了一个月，之后复喝，后果严重，今年才开始彻底戒了，每天必须定时吃药。3月23号晚上在温州米房演出，师父玮洪连灌五瓶啤酒，观众起哄让十三也吹一瓶。</p>
+    <p>十三说：“我戒了，真的”，拿出一罐药丸和矿泉水，“下面我给大家表演吃药。” 哄堂大笑。</p></article>
+<article id="p2">第二篇文章</article>
+<article id="p3">第三篇文章</article>
+<article id="p4">第四篇文章</article>
+<article id="p5">第五篇文章</article>
+</body>
+</html>
